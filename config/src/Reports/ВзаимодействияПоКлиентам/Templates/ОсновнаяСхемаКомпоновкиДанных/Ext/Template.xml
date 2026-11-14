@@ -15,9 +15,6 @@
 					<v8:content>Клиент</v8:content>
 				</v8:item>
 			</title>
-			<valueType>
-				<v8:Type>cfg:CatalogRef.Клиенты</v8:Type>
-			</valueType>
 		</field>
 		<field xsi:type="DataSetFieldField">
 			<dataPath>Дата</dataPath>
@@ -28,12 +25,6 @@
 					<v8:content>Дата и время</v8:content>
 				</v8:item>
 			</title>
-			<valueType>
-				<v8:Type>xs:dateTime</v8:Type>
-				<v8:DateQualifiers>
-				<v8:DateFractions>DateTime</v8:DateFractions>
-				</v8:DateQualifiers>
-			</valueType>
 		</field>
 		<field xsi:type="DataSetFieldField">
 			<dataPath>Вид</dataPath>
@@ -44,9 +35,6 @@
 					<v8:content>Вид взаимодействия</v8:content>
 				</v8:item>
 			</title>
-			<valueType>
-				<v8:Type>cfg:CatalogRef.ВидыВзаимодействий</v8:Type>
-			</valueType>
 		</field>
 		<field xsi:type="DataSetFieldField">
 			<dataPath>Содержание</dataPath>
@@ -57,13 +45,6 @@
 					<v8:content>Содержание</v8:content>
 				</v8:item>
 			</title>
-			<valueType>
-				<v8:Type>xs:string</v8:Type>
-				<v8:StringQualifiers>
-				<v8:Length>0</v8:Length>
-				<v8:AllowedLength>Variable</v8:AllowedLength>
-				</v8:StringQualifiers>
-			</valueType>
 		</field>
 		<field xsi:type="DataSetFieldField">
 			<dataPath>Результат</dataPath>
@@ -74,9 +55,6 @@
 					<v8:content>Результат</v8:content>
 				</v8:item>
 			</title>
-			<valueType>
-				<v8:Type>cfg:CatalogRef.РезультатыВзаимодействий</v8:Type>
-			</valueType>
 		</field>
 		<field xsi:type="DataSetFieldField">
 			<dataPath>Статус</dataPath>
@@ -87,13 +65,6 @@
 					<v8:content>Статус</v8:content>
 				</v8:item>
 			</title>
-			<valueType>
-				<v8:Type>xs:string</v8:Type>
-				<v8:StringQualifiers>
-				<v8:Length>25</v8:Length>
-				<v8:AllowedLength>Variable</v8:AllowedLength>
-				</v8:StringQualifiers>
-			</valueType>
 		</field>
 		<dataSource>ИсточникДанных1</dataSource>
 		<query>ВЫБРАТЬ
@@ -104,10 +75,10 @@
 	Взаимодействие.ДостигнутыйРезультат КАК Результат,
 	ВЫБОР
 		КОГДА Взаимодействие.Дата > &amp;ТекущаяДата
-			ТОГДА "Запланировано"
-		КОГДА Взаимодействие.Дата >= ДОБАВИТЬКДАТЕ(&amp;ТекущаяДата, ДЕНЬ, -14)
-			ТОГДА "Требует внимания"
-		ИНАЧЕ "Завершено"
+			ТОГДА &quot;Запланировано&quot;
+		КОГДА Взаимодействие.Дата &gt;= ДОБАВИТЬКДАТЕ(&amp;ТекущаяДата, ДЕНЬ, -14)
+			ТОГДА &quot;Требует внимания&quot;
+		ИНАЧЕ &quot;Завершено&quot;
 	КОНЕЦ КАК Статус
 ИЗ
 	Документ.Взаимодействие КАК Взаимодействие
@@ -180,7 +151,7 @@
 							<dcscor:value xsi:type="v8ui:Color">#C6EFCE</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
-					<dcsset:presentation xsi:type="xs:string">Будущая активность — запланирован следующий шаг</dcsset:presentation>
+					<dcsset:presentation xsi:type="xs:string">Будущая активность</dcsset:presentation>
 				</dcsset:item>
 				<dcsset:item>
 					<dcsset:selection/>
@@ -197,7 +168,7 @@
 							<dcscor:value xsi:type="v8ui:Color">#FFEB9C</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
-					<dcsset:presentation xsi:type="xs:string">За последние 14 дней — работа может остановиться</dcsset:presentation>
+					<dcsset:presentation xsi:type="xs:string">Последние 14 дней</dcsset:presentation>
 				</dcsset:item>
 				<dcsset:item>
 					<dcsset:selection/>
@@ -214,7 +185,7 @@
 							<dcscor:value xsi:type="v8ui:Color">#E7E6E6</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
-					<dcsset:presentation xsi:type="xs:string">Завершённые давние взаимодействия</dcsset:presentation>
+					<dcsset:presentation xsi:type="xs:string">Завершённые давние</dcsset:presentation>
 				</dcsset:item>
 			</dcsset:conditionalAppearance>
 			<dcsset:outputParameters>
