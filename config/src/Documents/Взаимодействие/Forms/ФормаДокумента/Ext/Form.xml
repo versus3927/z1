@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="AfterWriteAtServer">ПослеЗаписиНаСервере</Event>
+		<Event name="AfterWrite">ПослеЗаписи</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Дата" id="1">
+			<DataPath>Объект.Дата</DataPath>
+			<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="101"/>
+		</InputField>
+		<InputField name="Клиент" id="3">
+			<DataPath>Объект.Клиент</DataPath>
+			<ExtendedTooltip name="КлиентРасширеннаяПодсказка" id="103"/>
+		</InputField>
+		<InputField name="КонтактноеЛицо" id="5">
+			<DataPath>Объект.КонтактноеЛицо</DataPath>
+			<ChoiceParameterLinks>
+				<xr:Link>
+					<xr:Name>Отбор.Владелец</xr:Name>
+					<xr:DataPath xsi:type="xs:string">Объект.Клиент</xr:DataPath>
+					<xr:ValueChange>Clear</xr:ValueChange>
+				</xr:Link>
+			</ChoiceParameterLinks>
+			<ExtendedTooltip name="КонтактноеЛицоРасширеннаяПодсказка" id="105"/>
+		</InputField>
+		<InputField name="ВидВзаимодействия" id="7">
+			<DataPath>Объект.ВидВзаимодействия</DataPath>
+			<ExtendedTooltip name="ВидВзаимодействияРасширеннаяПодсказка" id="107"/>
+		</InputField>
+		<InputField name="КраткоеСодержание" id="9">
+			<DataPath>Объект.КраткоеСодержание</DataPath>
+			<MultiLine>true</MultiLine>
+			<ExtendedTooltip name="КраткоеСодержаниеРасширеннаяПодсказка" id="109"/>
+		</InputField>
+		<InputField name="ДостигнутыйРезультат" id="11">
+			<DataPath>Объект.ДостигнутыйРезультат</DataPath>
+			<ExtendedTooltip name="ДостигнутыйРезультатРасширеннаяПодсказка" id="111"/>
+		</InputField>
+		<UsualGroup name="ГруппаНапоминание" id="13">
+			<Group>HorizontalIfPossible</Group>
+			<ShowTitle>false</ShowTitle>
+			<ChildItems>
+			<CheckBoxField name="Напомнить" id="14">
+				<DataPath>Объект.Напомнить</DataPath>
+				<ExtendedTooltip name="НапомнитьРасширеннаяПодсказка" id="114"/>
+			</CheckBoxField>
+			<InputField name="ДатаВремяНапоминания" id="16">
+				<DataPath>Объект.ДатаВремяНапоминания</DataPath>
+				<ExtendedTooltip name="ДатаВремяНапоминанияРасширеннаяПодсказка" id="116"/>
+			</InputField>
+			</ChildItems>
+			<ExtendedTooltip name="ГруппаНапоминаниеРасширеннаяПодсказка" id="113"/>
+		</UsualGroup>
+		<UsualGroup name="ГруппаСледующийШаг" id="17">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Следующий шаг</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<ChildItems>
+			<LabelDecoration name="НадписьНеЗапланировано" id="18">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Взаимодействий не запланировано</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="НадписьНеЗапланированоРасширеннаяПодсказка" id="118"/>
+			</LabelDecoration>
+			<LabelField name="СледующееВзаимодействие" id="20">
+				<DataPath>Объект.СледующееВзаимодействие</DataPath>
+				<Hyperlink>true</Hyperlink>
+				<ExtendedTooltip name="СледующееВзаимодействиеРасширеннаяПодсказка" id="120"/>
+			</LabelField>
+			<Button name="ЗапланироватьВзаимодействие" id="22">
+				<Type>UsualButton</Type>
+				<CommandName>Form.Command.ЗапланироватьВзаимодействие</CommandName>
+				<ExtendedTooltip name="ЗапланироватьВзаимодействиеРасширеннаяПодсказка" id="122"/>
+			</Button>
+			</ChildItems>
+			<ExtendedTooltip name="ГруппаСледующийШагРасширеннаяПодсказка" id="117"/>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="50">
+			<Type>
+				<v8:Type>cfg:DocumentObject.Взаимодействие</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ИсходноеВзаимодействие" id="51">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Исходное взаимодействие</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DocumentRef.Взаимодействие</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Связано" id="52">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Связано</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ЗапланироватьВзаимодействие" id="53">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запланировать взаимодействие</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать следующее запланированное взаимодействие с этим клиентом</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗапланироватьВзаимодействие</Action>
+		</Command>
+	</Commands>
+	<Parameters>
+		<Parameter name="Клиент">
+			<Type>
+				<v8:Type>cfg:CatalogRef.Клиенты</v8:Type>
+			</Type>
+		</Parameter>
+		<Parameter name="КонтактноеЛицо">
+			<Type>
+				<v8:Type>cfg:CatalogRef.КонтактныеЛица</v8:Type>
+			</Type>
+		</Parameter>
+		<Parameter name="ИсходноеВзаимодействие">
+			<Type>
+				<v8:Type>cfg:DocumentRef.Взаимодействие</v8:Type>
+			</Type>
+		</Parameter>
+	</Parameters>
+</Form>
