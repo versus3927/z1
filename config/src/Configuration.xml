@@ -245,6 +245,9 @@
 			<DefaultConstantsForm/>
 		</Properties>
 		<ChildObjects>
+			<StyleItem>ЦветФонаРазделов</StyleItem>
+			<StyleItem>ЦветАкцента1</StyleItem>
+			<StyleItem>ЦветАкцента2</StyleItem>
 			<Language>Русский</Language>
 			<Subsystem>Маркетинг</Subsystem>
 			<Subsystem>Продажи</Subsystem>
