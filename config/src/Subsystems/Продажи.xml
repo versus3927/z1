@@ -29,6 +29,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ПоступлениеДС</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.Продажа</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Report.ВоронкаПродаж</xr:Item>
+							<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЗаполнениеТестовыхДанных</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

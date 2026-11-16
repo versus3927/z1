@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="2.17">
+	<AutoCommandBar name="F1" id="-1"/>
+	<ChildItems>
+		<InputField name="Сделка" id="1"><DataPath>Объект.Сделка</DataPath><ExtendedTooltip name="E1" id="101"/></InputField>
+		<Table name="Товары" id="10">
+			<DataPath>Объект.Товары</DataPath>
+			<ChildItems>
+				<InputField name="Товар" id="11"><DataPath>Объект.Товары.Товар</DataPath><ExtendedTooltip name="E11" id="111"/></InputField>
+				<InputField name="Количество" id="12"><DataPath>Объект.Товары.Количество</DataPath><Events><Event name="OnChange">ТоварыКоличествоПриИзменении</Event></Events><ExtendedTooltip name="E12" id="112"/></InputField>
+				<InputField name="Цена" id="13"><DataPath>Объект.Товары.Цена</DataPath><Events><Event name="OnChange">ТоварыЦенаПриИзменении</Event></Events><ExtendedTooltip name="E13" id="113"/></InputField>
+				<InputField name="Сумма" id="14"><DataPath>Объект.Товары.Сумма</DataPath><ExtendedTooltip name="E14" id="114"/></InputField>
+			</ChildItems>
+		</Table>
+		<InputField name="ОбщаяСтоимость" id="20"><DataPath>Объект.ОбщаяСтоимость</DataPath><ExtendedTooltip name="E20" id="120"/></InputField>
+	</ChildItems>
+	<Attributes><Attribute name="Объект" id="1"><Type><v8:Type>cfg:DocumentObject.Продажа</v8:Type></Type><MainAttribute>true</MainAttribute></Attribute></Attributes>
+</Form>

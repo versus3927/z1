@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events><Event name="OnOpen">ПриОткрытии</Event><Event name="OnCreateAtServer">ПриСозданииНаСервере</Event></Events>
+	<ChildItems>
+		<InputField name="Наименование" id="1"><DataPath>Объект.Description</DataPath><ExtendedTooltip name="N1" id="101"/></InputField>
+		<InputField name="Клиент" id="3"><DataPath>Объект.Клиент</DataPath><ExtendedTooltip name="N3" id="103"/></InputField>
+		<InputField name="Статус" id="5"><DataPath>Объект.Статус</DataPath><Events><Event name="OnChange">СтатусПриИзменении</Event></Events><ExtendedTooltip name="N5" id="105"/></InputField>
+		<InputField name="ПричинаПроигрыша" id="7"><DataPath>Объект.ПричинаПроигрыша</DataPath><ExtendedTooltip name="N7" id="107"/></InputField>
+		<InputField name="ТекущийЭтап" id="9"><DataPath>Объект.ТекущийЭтап</DataPath><ExtendedTooltip name="N9" id="109"/></InputField>
+		<InputField name="ОжидаемаяСумма" id="11"><DataPath>Объект.ОжидаемаяСумма</DataPath><ExtendedTooltip name="N11" id="111"/></InputField>
+	</ChildItems>
+	<Attributes><Attribute name="Объект" id="1"><Type><v8:Type>cfg:CatalogObject.Сделки</v8:Type></Type><MainAttribute>true</MainAttribute><SavedData>true</SavedData></Attribute></Attributes>
+</Form>

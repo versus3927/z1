@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" version="2.17">
+	<AutoCommandBar name="F1" id="-1"><ChildItems><Button name="B1" id="1"><Type>UsualButton</Type><CommandName>Form.Command.Заполнить</CommandName><ExtendedTooltip name="T1" id="101"/></Button></ChildItems></AutoCommandBar>
+	<Commands><Command name="Заполнить" id="1"><Title><v8:item><v8:lang>ru</v8:lang><v8:content>Создать 4 сделки и данные по ТЗ</v8:content></v8:item></Title><Action>Заполнить</Action></Command></Commands>
+</Form>

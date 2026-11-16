@@ -269,6 +269,7 @@
 			<Document>Продажа</Document>
 			<Report>ВзаимодействияПоКлиентам</Report>
 			<Report>ВоронкаПродаж</Report>
+					<DataProcessor>ЗаполнениеТестовыхДанных</DataProcessor>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>
