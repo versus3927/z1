@@ -20,6 +20,15 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.КонтактныеЛица</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.Взаимодействие</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Report.ВзаимодействияПоКлиентам</xr:Item>
+							<xr:Item xsi:type="xr:MDObjectRef">Catalog.Сделки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Товары</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ИнтересКлиента</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ПричиныПроигрыша</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.КоммерческоеПредложение</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ЗаказКлиента</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПоступлениеДС</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.Продажа</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ВоронкаПродаж</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

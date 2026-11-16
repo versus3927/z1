@@ -256,8 +256,19 @@
 			<Catalog>КонтактныеЛица</Catalog>
 			<Catalog>РезультатыВзаимодействий</Catalog>
 			<Catalog>РолиКонтактныхЛиц</Catalog>
+						<Enum>СтатусыСделок</Enum>
+			<Enum>ЭтапыСделки</Enum>
+			<Catalog>ИнтересКлиента</Catalog>
+			<Catalog>ПричиныПроигрыша</Catalog>
+			<Catalog>Сделки</Catalog>
+			<Catalog>Товары</Catalog>
 			<Document>Взаимодействие</Document>
+			<Document>ЗаказКлиента</Document>
+			<Document>КоммерческоеПредложение</Document>
+			<Document>ПоступлениеДС</Document>
+			<Document>Продажа</Document>
 			<Report>ВзаимодействияПоКлиентам</Report>
+			<Report>ВоронкаПродаж</Report>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>

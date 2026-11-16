@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<Enum uuid="6abb523b-1441-49f8-b835-c5ee447964e9">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.СтатусыСделок" category="Ref">
+				<xr:TypeId>fd355694-61ac-4880-9c77-9b3a72e8f89f</xr:TypeId>
+				<xr:ValueId>d9da9970-12ff-45f0-9af7-533f27902ccb</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.СтатусыСделок" category="Manager">
+				<xr:TypeId>fbf81430-51cd-4097-9d5a-3a3879a46570</xr:TypeId>
+				<xr:ValueId>eacfe81d-d52d-4ecc-abbb-1b72a40f74c5</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.СтатусыСделок" category="List">
+				<xr:TypeId>6248e9f5-b1e5-4228-ae62-dfac3dfde7be</xr:TypeId>
+				<xr:ValueId>fb9c02d6-2f58-4e66-8b82-f17cdc825c84</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>СтатусыСделок</Name>
+			<Synonym><v8:item><v8:lang>ru</v8:lang><v8:content>Статусы сделок</v8:content></v8:item></Synonym>
+			<Comment/>
+			<UseStandardCommands>false</UseStandardCommands>
+			<QuickChoice>true</QuickChoice>
+			<ChoiceMode>BothWays</ChoiceMode>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="e39ac4ce-e963-4305-b4cb-c06f549030bd"><Properties><Name>ВРаботе</Name><Synonym><v8:item><v8:lang>ru</v8:lang><v8:content>В работе</v8:content></v8:item></Synonym>
+<Comment/></Properties></EnumValue>
+			<EnumValue uuid="c54103a4-9633-419e-b20d-37c269046fae"><Properties><Name>Выиграна</Name><Synonym><v8:item><v8:lang>ru</v8:lang><v8:content>Выиграна</v8:content></v8:item></Synonym>
+<Comment/></Properties></EnumValue>
+			<EnumValue uuid="878bce12-1f31-4c79-969d-263e2959f587"><Properties><Name>Проиграна</Name><Synonym><v8:item><v8:lang>ru</v8:lang><v8:content>Проиграна</v8:content></v8:item></Synonym>
+<Comment/></Properties></EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>

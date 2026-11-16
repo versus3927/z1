@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<Item>
+		<Name>ВысокаяЦена</Name>
+		<Description>Высокая цена</Description>
+		<Code>000000001</Code>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item>
+		<Name>ВыбранКонкурент</Name>
+		<Description>Выбран конкурент</Description>
+		<Code>000000002</Code>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item>
+		<Name>ОтсутствуетБюджет</Name>
+		<Description>Отсутствует бюджет</Description>
+		<Code>000000003</Code>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item>
+		<Name>ИзменилисьПланы</Name>
+		<Description>Изменились планы клиента</Description>
+		<Code>000000004</Code>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item>
+		<Name>НеПодошелФункционал</Name>
+		<Description>Не подошёл функционал</Description>
+		<Code>000000005</Code>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item>
+		<Name>НеСмогСвязаться</Name>
+		<Description>Менеджер не смог связаться</Description>
+		<Code>000000006</Code>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item>
+		<Name>РешениеОтложено</Name>
+		<Description>Решение отложено</Description>
+		<Code>000000007</Code>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item>
+		<Name>ИнаяПричина</Name>
+		<Description>Иная причина</Description>
+		<Code>000000008</Code>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

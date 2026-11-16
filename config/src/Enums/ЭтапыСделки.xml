@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<Enum uuid="19c176e4-7801-4191-89c0-d9a835494137">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.ЭтапыСделки" category="Ref">
+				<xr:TypeId>fdda0021-7272-4fa2-a3fe-8c50a5954104</xr:TypeId>
+				<xr:ValueId>5e2f675f-8ae4-47dc-96a1-a4e6e71fe2fb</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.ЭтапыСделки" category="Manager">
+				<xr:TypeId>dccffa27-1c44-4c18-be5a-108550a9b05d</xr:TypeId>
+				<xr:ValueId>a1869610-4b8f-46ba-bb91-b950587f7d7a</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.ЭтапыСделки" category="List">
+				<xr:TypeId>2f309af7-c441-4267-8cf1-25d0780c84e9</xr:TypeId>
+				<xr:ValueId>58fdefef-eaee-4e8d-8899-d0be80c6e33b</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ЭтапыСделки</Name>
+			<Synonym><v8:item><v8:lang>ru</v8:lang><v8:content>Этапы сделки</v8:content></v8:item></Synonym>
+			<Comment/>
+			<UseStandardCommands>false</UseStandardCommands>
+			<QuickChoice>true</QuickChoice>
+			<ChoiceMode>BothWays</ChoiceMode>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="f4ad1c48-3647-467e-bf58-db488be44db0"><Properties><Name>ПолученаЗаявка</Name><Synonym><v8:item><v8:lang>ru</v8:lang><v8:content>Получена заявка</v8:content></v8:item></Synonym>
+<Comment/></Properties></EnumValue>
+			<EnumValue uuid="3c75684c-79e3-4f72-a301-dcad82e3ee7c"><Properties><Name>КлиентЗарегистрирован</Name><Synonym><v8:item><v8:lang>ru</v8:lang><v8:content>Клиент зарегистрирован</v8:content></v8:item></Synonym>
+<Comment/></Properties></EnumValue>
+			<EnumValue uuid="c898ca19-3d33-46c2-a996-d7fabe1bb197"><Properties><Name>ВыявленаПотребность</Name><Synonym><v8:item><v8:lang>ru</v8:lang><v8:content>Выявлена потребность</v8:content></v8:item></Synonym>
+<Comment/></Properties></EnumValue>
+			<EnumValue uuid="b9e585a3-d918-4797-9e07-65a4f2a9f215"><Properties><Name>КоммерческоеПредложение</Name><Synonym><v8:item><v8:lang>ru</v8:lang><v8:content>Подготовлено коммерческое предложение</v8:content></v8:item></Synonym>
+<Comment/></Properties></EnumValue>
+			<EnumValue uuid="998036ad-fe1d-4f3d-9b23-5ddd2a6b42c2"><Properties><Name>ЗаключенДоговор</Name><Synonym><v8:item><v8:lang>ru</v8:lang><v8:content>Заключен договор</v8:content></v8:item></Synonym>
+<Comment/></Properties></EnumValue>
+			<EnumValue uuid="004b9065-9ef8-4d9b-976c-e782828537ac"><Properties><Name>ВыставленСчет</Name><Synonym><v8:item><v8:lang>ru</v8:lang><v8:content>Выставлен счёт / заказ клиента</v8:content></v8:item></Synonym>
+<Comment/></Properties></EnumValue>
+			<EnumValue uuid="ab5ee6fc-3295-45e9-971b-2d1dc2a635c8"><Properties><Name>ПолученаОплата</Name><Synonym><v8:item><v8:lang>ru</v8:lang><v8:content>Получена оплата</v8:content></v8:item></Synonym>
+<Comment/></Properties></EnumValue>
+			<EnumValue uuid="ece2126a-d53f-4299-9927-6e7a68c9c9f2"><Properties><Name>Продажа</Name><Synonym><v8:item><v8:lang>ru</v8:lang><v8:content>Выполнена отгрузка / продажа</v8:content></v8:item></Synonym>
+<Comment/></Properties></EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>
