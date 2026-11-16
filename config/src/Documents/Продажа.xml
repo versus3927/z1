@@ -316,8 +316,10 @@
 							<DataHistory>Use</DataHistory>
 						</Properties>
 					</Attribute>
-				</ChildObjects>
+					<Form>ФормаДокумента</Form>
+		</ChildObjects>
 			</TabularSection>
+			<Form>ФормаДокумента</Form>
 		</ChildObjects>
 	</Document>
 </MetaDataObject>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" version="2.17">
+	<Form uuid="8c8ec507-40ee-4acf-987f-d2a02c5b7bd3">
+		<Properties>
+			<Name>ФормаДокумента</Name>
+			<Synonym><v8:item><v8:lang>ru</v8:lang><v8:content>ФормаДокумента</v8:content></v8:item></Synonym>
+			<Comment/>
+			<FormType>Managed</FormType>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<UsePurposes>
+				<v8:Value xsi:type="app:ApplicationUsePurpose">PlatformApplication</v8:Value>
+			</UsePurposes>
+		</Properties>
+	</Form>
+</MetaDataObject>
