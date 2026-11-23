@@ -9,14 +9,15 @@
 		<field xsi:type="DataSetFieldField"><dataPath>Сумма</dataPath><field>Сумма</field><title xsi:type="v8:LocalStringType"><v8:item><v8:lang>ru</v8:lang><v8:content>Ожидаемая сумма</v8:content></v8:item></title></field>
 		<field xsi:type="DataSetFieldField"><dataPath>Количество</dataPath><field>Количество</field><title xsi:type="v8:LocalStringType"><v8:item><v8:lang>ru</v8:lang><v8:content>Количество сделок</v8:content></v8:item></title></field>
 		<resource xsi:type="DataSetFieldSum"><dataPath>Сумма</dataPath></resource>
-		<resource xsi:type="DataSetFieldCount"><dataPath>Количество</dataPath></resource>
+		<resource xsi:type="DataSetFieldSum"><dataPath>Количество</dataPath></resource>
 		<dataSource>ИсточникДанных1</dataSource>
 		<query>ВЫБРАТЬ
 	Сделки.ТекущийЭтап КАК Этап,
 	Сделки.Наименование КАК Сделка,
 	Сделки.ПредметИнтереса КАК ПредметИнтереса,
 	Сделки.Статус КАК Статус,
-	Сделки.ОжидаемаяСумма КАК Сумма
+	Сделки.ОжидаемаяСумма КАК Сумма,
+	1 КАК Количество
 ИЗ
 	Справочник.Сделки КАК Сделки
 ГДЕ

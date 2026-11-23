@@ -22,7 +22,8 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.РезультатыВзаимодействий</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ИсточникиПоявления</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.РолиКонтактныхЛиц</xr:Item>
-			</Content>
+								<xr:Item xsi:type="xr:MDObjectRef">Document.Взаимодействие</xr:Item>
+				</Content>
 		</Properties>
 		<ChildObjects/>
 	</Subsystem>

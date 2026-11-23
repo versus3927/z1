@@ -22,6 +22,14 @@
 			<DataPath>Объект.Наименование</DataPath>
 			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="110"/>
 		</InputField>
+		<InputField name="Телефон" id="12">
+			<DataPath>Объект.Телефон</DataPath>
+			<ExtendedTooltip name="ТелефонРасширеннаяПодсказка" id="112"/>
+		</InputField>
+		<InputField name="Email" id="13">
+			<DataPath>Объект.Email</DataPath>
+			<ExtendedTooltip name="EmailРасширеннаяПодсказка" id="113"/>
+		</InputField>
 		<InputField name="ИсточникПоявления" id="11">
 			<DataPath>Объект.ИсточникПоявления</DataPath>
 			<ExtendedTooltip name="ИсточникПоявленияРасширеннаяПодсказка" id="111"/>

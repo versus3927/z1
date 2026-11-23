@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<Table name="Список" id="1">
+			<DataPath>Список</DataPath>
+			<ChildItems>
+				<InputField name="СписокНаименование" id="2">
+					<DataPath>Список.Наименование</DataPath>
+					<ExtendedTooltip name="СписокНаименованиеРасширеннаяПодсказка" id="102"/>
+				</InputField>
+				<InputField name="СписокТелефон" id="3">
+					<DataPath>Список.Телефон</DataPath>
+					<ExtendedTooltip name="СписокТелефонРасширеннаяПодсказка" id="103"/>
+				</InputField>
+				<InputField name="СписокEmail" id="4">
+					<DataPath>Список.Email</DataPath>
+					<ExtendedTooltip name="СписокEmailРасширеннаяПодсказка" id="104"/>
+				</InputField>
+				<InputField name="СписокИсточникПоявления" id="5">
+					<DataPath>Список.ИсточникПоявления</DataPath>
+					<ExtendedTooltip name="СписокИсточникПоявленияРасширеннаяПодсказка" id="105"/>
+				</InputField>
+				<InputField name="СписокКомментарий" id="6">
+					<DataPath>Список.Комментарий</DataPath>
+					<ExtendedTooltip name="СписокКомментарийРасширеннаяПодсказка" id="106"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Список" id="20">
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xsi:type="cfg:DynamicListSettings">
+				<cfg:mainTable>Catalog.Клиенты</cfg:mainTable>
+				<cfg:dynamicListParametrization>ListSettingsParameterization</cfg:dynamicListParametrization>
+				<cfg:keyParameter>Catalog.Клиенты</cfg:keyParameter>
+			</Settings>
+		</Attribute>
+	</Attributes>
+</Form>
