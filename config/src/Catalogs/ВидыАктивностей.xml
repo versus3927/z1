@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:d3p1="http://v8.1c.ru/8.2/data/planner" version="2.17">
+	<Catalog uuid="16113E33-C62B-4009-9E21-42996859FE39">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.ВидыАктивностей" category="Object">
+				<xr:TypeId>FC4C7CBF-D301-45F9-8D9B-D4AFCAF14DAF</xr:TypeId><xr:ValueId>4AC1D3FA-A6FE-4DDE-A31B-C9D730E5A2B6</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.ВидыАктивностей" category="Ref">
+				<xr:TypeId>89461BC1-9447-44FB-BBD8-FBCEEAAB95A1</xr:TypeId><xr:ValueId>78A03744-083D-4468-B009-9AE04EC338F0</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.ВидыАктивностей" category="Selection">
+				<xr:TypeId>5634CBE9-E3AE-4BF1-B40E-CA9052570086</xr:TypeId><xr:ValueId>A489E17B-B229-4228-91DE-7DBD1BA88DB3</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.ВидыАктивностей" category="List">
+				<xr:TypeId>D4EC7C97-8386-4B3F-98C1-106EB4510B51</xr:TypeId><xr:ValueId>C3E203C5-6984-43AA-86D9-E4F44582358F</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.ВидыАктивностей" category="Manager">
+				<xr:TypeId>D1C2FAB0-3484-4F8F-8064-2F7CC9454902</xr:TypeId><xr:ValueId>AF1741DC-225D-4938-AF79-32F6D44C5C3E</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ВидыАктивностей</Name>
+			<Synonym><v8:item><v8:lang>ru</v8:lang><v8:content>Виды активностей</v8:content></v8:item></Synonym>
+			<Hierarchical>false</Hierarchical><HierarchyType>HierarchyFoldersAndItems</HierarchyType><LimitLevelCount>false</LimitLevelCount><LevelCount>2</LevelCount>			<FoldersOnTop>true</FoldersOnTop><UseStandardCommands>true</UseStandardCommands><Owners/><SubordinationUse>ToItems</SubordinationUse>			<CodeLength>9</CodeLength><DescriptionLength>100</DescriptionLength><CodeType>String</CodeType><CodeAllowedLength>Variable</CodeAllowedLength>			<CodeSeries>WholeCatalog</CodeSeries><CheckUnique>true</CheckUnique><Autonumbering>true</Autonumbering><DefaultPresentation>AsDescription</DefaultPresentation>			<EditType>InDialog</EditType><QuickChoice>false</QuickChoice><ChoiceMode>BothWays</ChoiceMode>			<InputByString><xr:Field>Catalog.ВидыАктивностей.StandardAttribute.Description</xr:Field><xr:Field>Catalog.ВидыАктивностей.StandardAttribute.Code</xr:Field></InputByString>			<SearchStringModeOnInputByString>Begin</SearchStringModeOnInputByString><FullTextSearchOnInputByString>DontUse</FullTextSearchOnInputByString><ChoiceDataGetModeOnInputByString>Directly</ChoiceDataGetModeOnInputByString>		</Properties>
+		<ChildObjects>
+			<Attribute uuid="643536F8-0B57-470E-AA71-12C16909010A">
+				<Properties>
+					<Name>ТипАктивности</Name>
+					<Synonym><v8:item><v8:lang>ru</v8:lang><v8:content>Тип активности</v8:content></v8:item></Synonym>
+					<Comment/><Type>
+					<v8:Type>cfg:EnumRef.ТипыАктивностей</v8:Type>
+					</Type><PasswordMode>false</PasswordMode><Format/><EditFormat/><ToolTip/><MarkNegatives>false</MarkNegatives><Mask/><MultiLine>false</MultiLine><ExtendedEdit>false</ExtendedEdit><MinValue xsi:nil="true"/><MaxValue xsi:nil="true"/><FillChecking>DontCheck</FillChecking><ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems><ChoiceParameterLinks/><ChoiceParameters/><QuickChoice>Auto</QuickChoice><CreateOnInput>Auto</CreateOnInput><ChoiceForm/><LinkByType/><ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>					<Use>ForItem</Use>
+<Indexing>DontIndex</Indexing><FullTextSearch>Use</FullTextSearch><DataHistory>Use</DataHistory></Properties></Attribute>
+		</ChildObjects>
+	</Catalog>
+</MetaDataObject>

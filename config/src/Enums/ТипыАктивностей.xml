@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:d3p1="http://v8.1c.ru/8.2/data/planner" version="2.17">
+	<Enum uuid="0AD11BA2-F9BE-4D58-9ACD-7CC5DD6A84B8">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.ТипыАктивностей" category="Ref">
+				<xr:TypeId>403D2005-F193-4561-9CF7-32CD86D20E14</xr:TypeId><xr:ValueId>DECC134E-15CE-4155-A812-A7CCF5E684AE</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.ТипыАктивностей" category="Manager">
+				<xr:TypeId>F4BA07E6-2ECD-46D9-82C0-6FA8676B1A8F</xr:TypeId><xr:ValueId>4D4B2087-F146-4AA1-9C0C-CA7F9468CB4B</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.ТипыАктивностей" category="List">
+				<xr:TypeId>244B8B44-7B35-4F85-92B3-817D738D4D86</xr:TypeId><xr:ValueId>BA58AA16-0514-4379-81E4-7072CAEB9A87</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ТипыАктивностей</Name>
+			<Synonym><v8:item><v8:lang>ru</v8:lang><v8:content>Типы активностей</v8:content></v8:item></Synonym>
+			<UseStandardCommands>false</UseStandardCommands><QuickChoice>true</QuickChoice><ChoiceMode>BothWays</ChoiceMode>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="84A5E2E0-67B5-4F31-A8A0-2A4EDF436C76"><Properties><Name>Онлайн</Name>			<Synonym><v8:item><v8:lang>ru</v8:lang><v8:content>Онлайн</v8:content></v8:item></Synonym>
+</Properties></EnumValue>
+			<EnumValue uuid="C0E94AAA-E0A3-4129-98B8-1E58840F29A3"><Properties><Name>Офлайн</Name>			<Synonym><v8:item><v8:lang>ru</v8:lang><v8:content>Офлайн</v8:content></v8:item></Synonym>
+</Properties></EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>

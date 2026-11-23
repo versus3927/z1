@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:d3p1="http://v8.1c.ru/8.2/data/planner" version="2.17">
+	<AutoCommandBar name="F1" id="-1"><ChildItems><Button name="B1" id="2"><Type>UsualButton</Type><CommandName>Form.Command.Обновить</CommandName><ExtendedTooltip name="T1" id="101"/></Button></ChildItems></AutoCommandBar>
+	<Events><Event name="OnCreateAtServer">ПриСозданииНаСервере</Event></Events>
+	<ChildItems>
+		<PlannerField name="Календарь" id="3"><DataPath>Календарь</DataPath><Events><Event name="Selection">КалендарьВыбор</Event></Events><ExtendedTooltip name="T2" id="102"/></PlannerField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1"><Type><v8:Type>cfg:DataProcessorObject.КалендарьМаркетинга</v8:Type></Type><MainAttribute>true</MainAttribute></Attribute>
+		<Attribute name="Календарь" id="2"><Type><v8:Type>d3p1:Planner</v8:Type></Type></Attribute>
+	</Attributes>
+	<Commands><Command name="Обновить" id="1"><Title><v8:item><v8:lang>ru</v8:lang><v8:content>Обновить календарь</v8:content></v8:item></Title><Action>Обновить</Action></Command></Commands>
+</Form>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" version="2.17">
+	<AutoCommandBar name="F1" id="-1"/>
+	<ChildItems>
+		<InputField name="Название" id="1"><DataPath>Объект.Название</DataPath><ExtendedTooltip name="E1" id="101"/></InputField>
+		<InputField name="ВидАктивности" id="2"><DataPath>Объект.ВидАктивности</DataPath><Events><Event name="OnChange">ВидАктивностиПриИзменении</Event></Events><ExtendedTooltip name="E2" id="102"/></InputField>
+		<InputField name="ТипАктивности" id="11"><DataPath>Объект.ТипАктивности</DataPath><ExtendedTooltip name="E11" id="111"/></InputField>
+		<UsualGroup name="G1" id="20"><Group>Horizontal</Group><Representation>None</Representation><ShowTitle>false</ShowTitle><ChildItems>
+			<InputField name="ДатаНачала" id="3"><DataPath>Объект.ДатаНачала</DataPath><ExtendedTooltip name="E3" id="103"/></InputField>
+			<InputField name="ДатаОкончания" id="4"><DataPath>Объект.ДатаОкончания</DataPath><ExtendedTooltip name="E4" id="104"/></InputField>
+		</ChildItems><ExtendedTooltip name="E20" id="120"/></UsualGroup>
+		<InputField name="ПланируемыйБюджет" id="5"><DataPath>Объект.ПланируемыйБюджет</DataPath><ExtendedTooltip name="E5" id="105"/></InputField>
+		<InputField name="ОжидаемыйРезультат" id="7"><DataPath>Объект.ОжидаемыйРезультат</DataPath><ExtendedTooltip name="E7" id="107"/></InputField>
+		<InputField name="РезультатПроведения" id="8"><DataPath>Объект.РезультатПроведения</DataPath><ExtendedTooltip name="E8" id="108"/></InputField>
+		<CheckBoxField name="Выполнено" id="12"><DataPath>Объект.Выполнено</DataPath><ExtendedTooltip name="E12" id="112"/></CheckBoxField>
+		<CheckBoxField name="Напомнить" id="9"><DataPath>Объект.Напомнить</DataPath><ExtendedTooltip name="E9" id="109"/></CheckBoxField>
+		<InputField name="ДатаВремяНапоминания" id="10"><DataPath>Объект.ДатаВремяНапоминания</DataPath><ExtendedTooltip name="E10" id="110"/></InputField>
+	</ChildItems>
+	<Attributes><Attribute name="Объект" id="1"><Type><v8:Type>cfg:DocumentObject.МаркетинговаяАктивность</v8:Type></Type><MainAttribute>true</MainAttribute></Attribute></Attributes>
+</Form>

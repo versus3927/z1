@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:d3p1="http://v8.1c.ru/8.2/data/planner" version="2.17">
+	<Catalog uuid="6D189EA5-73FE-4D23-B4BA-7BE8E2E208AB">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.МаркетинговыеРезультаты" category="Object">
+				<xr:TypeId>7D137DF1-A0E4-409A-A0C7-9D3B2AE936BB</xr:TypeId><xr:ValueId>7CDAF173-0668-455B-BC07-714EC5C25162</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.МаркетинговыеРезультаты" category="Ref">
+				<xr:TypeId>232A26B4-32AA-40DE-A4CD-AFD270F8589B</xr:TypeId><xr:ValueId>9C812873-2848-4122-A002-490CBCD2BC4C</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.МаркетинговыеРезультаты" category="Selection">
+				<xr:TypeId>52BA012A-76D0-430F-86D3-307AB71F8B76</xr:TypeId><xr:ValueId>CA6C7B65-342A-4C48-B7C2-3122C0E406DC</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.МаркетинговыеРезультаты" category="List">
+				<xr:TypeId>B356113B-61D9-4789-88B4-AC2465C8B550</xr:TypeId><xr:ValueId>3B010C93-2D60-4414-B9C4-6ED7935F71F3</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.МаркетинговыеРезультаты" category="Manager">
+				<xr:TypeId>B00C9193-B3CB-49CE-860D-3AE09AB1DC47</xr:TypeId><xr:ValueId>AE8EFE2A-A844-4844-A538-A8F8BA9B1602</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>МаркетинговыеРезультаты</Name>
+			<Synonym><v8:item><v8:lang>ru</v8:lang><v8:content>Маркетинговые результаты</v8:content></v8:item></Synonym>
+			<Hierarchical>false</Hierarchical><HierarchyType>HierarchyFoldersAndItems</HierarchyType><LimitLevelCount>false</LimitLevelCount><LevelCount>2</LevelCount>			<FoldersOnTop>true</FoldersOnTop><UseStandardCommands>true</UseStandardCommands><Owners/><SubordinationUse>ToItems</SubordinationUse>			<CodeLength>9</CodeLength><DescriptionLength>100</DescriptionLength><CodeType>String</CodeType><CodeAllowedLength>Variable</CodeAllowedLength>			<CodeSeries>WholeCatalog</CodeSeries><CheckUnique>true</CheckUnique><Autonumbering>true</Autonumbering><DefaultPresentation>AsDescription</DefaultPresentation>			<EditType>InDialog</EditType><QuickChoice>false</QuickChoice><ChoiceMode>BothWays</ChoiceMode>			<InputByString><xr:Field>Catalog.МаркетинговыеРезультаты.StandardAttribute.Description</xr:Field><xr:Field>Catalog.МаркетинговыеРезультаты.StandardAttribute.Code</xr:Field></InputByString>			<SearchStringModeOnInputByString>Begin</SearchStringModeOnInputByString><FullTextSearchOnInputByString>DontUse</FullTextSearchOnInputByString><ChoiceDataGetModeOnInputByString>Directly</ChoiceDataGetModeOnInputByString>		</Properties>
+		<ChildObjects>
+		</ChildObjects>
+	</Catalog>
+</MetaDataObject>

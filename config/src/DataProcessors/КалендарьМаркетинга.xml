@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:d3p1="http://v8.1c.ru/8.2/data/planner" version="2.17">
+	<DataProcessor uuid="3A03461E-4D47-4397-AA4D-724748102925">
+		<InternalInfo>
+			<xr:GeneratedType name="DataProcessorObject.КалендарьМаркетинга" category="Object">
+				<xr:TypeId>D84F5A55-5E9F-42BF-8857-4394153140BA</xr:TypeId><xr:ValueId>B217ABA5-3A72-464E-AC30-03143E1CA2AF</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DataProcessorManager.КалендарьМаркетинга" category="Manager">
+				<xr:TypeId>D3D83816-29D9-45E5-8CF2-26ACB02BD4E1</xr:TypeId><xr:ValueId>4C01F03A-B8D3-4954-9837-F8ACC17173E4</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>КалендарьМаркетинга</Name>
+<Synonym><v8:item><v8:lang>ru</v8:lang><v8:content>Календарь маркетинга</v8:content></v8:item></Synonym>
+			<UseStandardCommands>true</UseStandardCommands><DefaultForm>DataProcessor.КалендарьМаркетинга.Form.Форма</DefaultForm>
+		</Properties>
+		<ChildObjects>
+			<Form>Форма</Form>
+		</ChildObjects>
+	</DataProcessor>
+</MetaDataObject>

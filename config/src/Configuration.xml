@@ -270,6 +270,13 @@
 			<Report>ВзаимодействияПоКлиентам</Report>
 			<Report>ВоронкаПродаж</Report>
 					<DataProcessor>ЗаполнениеТестовыхДанных</DataProcessor>
+					<Enum>ТипыАктивностей</Enum>
+			<Catalog>ВидыАктивностей</Catalog>
+			<Catalog>ВидыМероприятий</Catalog>
+			<Catalog>МаркетинговыеРезультаты</Catalog>
+			<Document>МаркетинговаяАктивность</Document>
+			<Document>МаркетинговоеМероприятие</Document>
+			<DataProcessor>КалендарьМаркетинга</DataProcessor>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>
