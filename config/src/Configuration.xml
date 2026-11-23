@@ -250,6 +250,7 @@
 			<Subsystem>Продажи</Subsystem>
 			<Subsystem>Сервис</Subsystem>
 			<CommonModule>НапоминанияМаркетингаВызовСервера</CommonModule>
+			<CommonModule>НапоминанияВзаимодействийВызовСервера</CommonModule>
 			<Enum>СтатусыСделок</Enum>
 			<Enum>ТипыАктивности</Enum>
 			<Enum>ТипыКонтакта</Enum>
