@@ -1,54 +1,54 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <PredefinedData xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
-	<Item>
+	<Item id="d13b1c61-3e42-56ad-b455-ba3f7a6800a4">
 		<Name>ТелефонныйЗвонок</Name>
 		<Description>Телефонный звонок</Description>
 		<Code>000000001</Code>
 		<IsFolder>false</IsFolder>
 	</Item>
-	<Item>
+	<Item id="2943e9fa-6eb4-59b8-b88b-cb96d45c7d28">
 		<Name>ЭлектронноеПисьмо</Name>
 		<Description>Электронное письмо</Description>
 		<Code>000000002</Code>
 		<IsFolder>false</IsFolder>
 	</Item>
-	<Item>
+	<Item id="d38a019e-fc3d-5994-95bf-065bb3c9839e">
 		<Name>Встреча</Name>
 		<Description>Встреча</Description>
 		<Code>000000003</Code>
 		<IsFolder>false</IsFolder>
 	</Item>
-	<Item>
+	<Item id="626da6ff-40ca-5e3b-a482-d3e072ce2b45">
 		<Name>Видеоконференция</Name>
 		<Description>Видеоконференция</Description>
 		<Code>000000004</Code>
 		<IsFolder>false</IsFolder>
 	</Item>
-	<Item>
+	<Item id="45f70b4d-fd38-59ab-b089-7c5d2d0d32e5">
 		<Name>СообщениеВМессенджере</Name>
 		<Description>Сообщение в мессенджере</Description>
 		<Code>000000005</Code>
 		<IsFolder>false</IsFolder>
 	</Item>
-	<Item>
+	<Item id="53133948-bfae-5912-a84c-5ca84152b04e">
 		<Name>ДемонстрацияПродукта</Name>
 		<Description>Демонстрация продукта</Description>
 		<Code>000000006</Code>
 		<IsFolder>false</IsFolder>
 	</Item>
-	<Item>
+	<Item id="7c7be52d-9335-5b13-a883-79f580b81db8">
 		<Name>ОтправкаПрезентации</Name>
 		<Description>Отправка презентации</Description>
 		<Code>000000007</Code>
 		<IsFolder>false</IsFolder>
 	</Item>
-	<Item>
+	<Item id="26bde2e2-5ea0-5a57-aaf9-762012dfc96e">
 		<Name>ОтправкаКоммерческогоПредложения</Name>
 		<Description>Отправка коммерческого предложения</Description>
 		<Code>000000008</Code>
 		<IsFolder>false</IsFolder>
 	</Item>
-	<Item>
+	<Item id="b8266de1-d3e2-50d6-b2ad-a0f0f46b9e41">
 		<Name>ВнутренняяЗадача</Name>
 		<Description>Внутренняя задача, связанная с клиентом</Description>
 		<Code>000000009</Code>

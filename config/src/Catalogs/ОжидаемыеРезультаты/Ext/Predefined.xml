@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<Item id="7c223dcd-7f69-5330-8fe4-52b1084ba407">
+		<Name>ПривлечениеНовыхКлиентов</Name>
+		<Code>000000001</Code>
+		<Description>Привлечение новых клиентов</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="15600b13-74fc-5b2c-a52f-917a92e08f3d">
+		<Name>ПовышениеУзнаваемостиБренда</Name>
+		<Code>000000002</Code>
+		<Description>Повышение узнаваемости бренда</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="bafa60ae-66f9-50df-abe8-e8f9fb8c9f91">
+		<Name>РостПовторныхПродаж</Name>
+		<Code>000000003</Code>
+		<Description>Рост повторных продаж</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="bc04256f-0977-5e96-af64-f2e28a7f8f1c">
+		<Name>СборКонтактнойБазыЛидов</Name>
+		<Code>000000004</Code>
+		<Description>Сбор контактной базы (лидов)</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="102f6bb7-79a5-54b6-a8b4-4fbf30450375">
+		<Name>ВыводНовогоПродукта</Name>
+		<Code>000000005</Code>
+		<Description>Вывод нового продукта на рынок</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="0808b567-b59f-5cac-a5cf-145efd9b7016">
+		<Name>УвеличениеЛояльностиКлиентов</Name>
+		<Code>000000006</Code>
+		<Description>Увеличение лояльности клиентов</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

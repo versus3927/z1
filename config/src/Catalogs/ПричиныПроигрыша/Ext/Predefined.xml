@@ -1,48 +1,48 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <PredefinedData xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
-	<Item>
+	<Item id="8c6cea41-7098-51e2-a23f-63a697127a92">
 		<Name>ВысокаяЦена</Name>
 		<Description>Высокая цена</Description>
 		<Code>000000001</Code>
 		<IsFolder>false</IsFolder>
 	</Item>
-	<Item>
+	<Item id="3bdea13d-5bad-59b8-80ca-50565411e876">
 		<Name>ВыбранКонкурент</Name>
 		<Description>Выбран конкурент</Description>
 		<Code>000000002</Code>
 		<IsFolder>false</IsFolder>
 	</Item>
-	<Item>
+	<Item id="0c1fc4ec-c3fd-5a89-9eed-8c25baf34c6e">
 		<Name>ОтсутствуетБюджет</Name>
 		<Description>Отсутствует бюджет</Description>
 		<Code>000000003</Code>
 		<IsFolder>false</IsFolder>
 	</Item>
-	<Item>
+	<Item id="be802244-83e7-579d-a46b-6632235f2cd3">
 		<Name>ИзменилисьПланы</Name>
 		<Description>Изменились планы клиента</Description>
 		<Code>000000004</Code>
 		<IsFolder>false</IsFolder>
 	</Item>
-	<Item>
+	<Item id="c1bfe7db-d594-5c6d-8d96-27039dbb45bb">
 		<Name>НеПодошелФункционал</Name>
 		<Description>Не подошёл функционал</Description>
 		<Code>000000005</Code>
 		<IsFolder>false</IsFolder>
 	</Item>
-	<Item>
+	<Item id="fb50fd62-8b9a-51fa-a20c-bdddc6551b56">
 		<Name>НеСмогСвязаться</Name>
 		<Description>Менеджер не смог связаться</Description>
 		<Code>000000006</Code>
 		<IsFolder>false</IsFolder>
 	</Item>
-	<Item>
+	<Item id="f894ee67-8bdc-53aa-8acf-efbe6db6043d">
 		<Name>РешениеОтложено</Name>
 		<Description>Решение отложено</Description>
 		<Code>000000007</Code>
 		<IsFolder>false</IsFolder>
 	</Item>
-	<Item>
+	<Item id="f1266bee-0aed-5a20-9fab-53300159b81a">
 		<Name>ИнаяПричина</Name>
 		<Description>Иная причина</Description>
 		<Code>000000008</Code>

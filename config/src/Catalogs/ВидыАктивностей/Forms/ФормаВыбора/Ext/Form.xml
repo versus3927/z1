@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="ТипАктивности" id="1">
+			<DataPath>Отбор.ТипАктивности</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тип активности</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="ТипАктивностиРасширеннаяПодсказка" id="101"/>
+		</InputField>
+		<Table name="Список" id="10">
+			<DataPath>Список</DataPath>
+			<ChildItems>
+				<InputField name="СписокНаименование" id="11">
+					<DataPath>Список.Наименование</DataPath>
+					<ExtendedTooltip name="СписокНаименованиеРасширеннаяПодсказка" id="111"/>
+				</InputField>
+				<InputField name="СписокТипАктивности" id="12">
+					<DataPath>Список.ТипАктивности</DataPath>
+					<ExtendedTooltip name="СписокТипАктивностиРасширеннаяПодсказка" id="112"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Список" id="20">
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xsi:type="cfg:DynamicListSettings">
+				<cfg:filter>
+					<cfg:item xsi:type="cfg:FilterItemComparison">
+						<cfg:left xsi:type="cfg:Field">ТипАктивности</cfg:left>
+						<cfg:comparisonType>Equal</cfg:comparisonType>
+						<cfg:right xsi:type="cfg:ValueListItem">Отбор.ТипАктивности</cfg:right>
+					</cfg:item>
+				</cfg:filter>
+			</Settings>
+		</Attribute>
+	</Attributes>
+</Form>

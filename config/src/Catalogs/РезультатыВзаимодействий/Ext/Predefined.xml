@@ -1,18 +1,18 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <PredefinedData xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
-	<Item>
+	<Item id="3084bff5-b7de-5af6-bf1e-6248576596e4">
 		<Name>ЗапланированоСледующееВзаимодействие</Name>
 		<Description>Запланировано следующее взаимодействие</Description>
 		<Code>000000001</Code>
 		<IsFolder>false</IsFolder>
 	</Item>
-	<Item>
+	<Item id="bc8a412d-9bb8-5736-8ba8-a976565fe82e">
 		<Name>ЗаключенаСделка</Name>
 		<Description>Заключена сделка</Description>
 		<Code>000000002</Code>
 		<IsFolder>false</IsFolder>
 	</Item>
-	<Item>
+	<Item id="f1cf4667-aa6d-5b9f-886e-ec82a4176d8b">
 		<Name>ОтказОтСотрудничества</Name>
 		<Description>Отказ от сотрудничества</Description>
 		<Code>000000003</Code>

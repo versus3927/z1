@@ -16,11 +16,19 @@
 			<Explanation/>
 			<Picture/>
 			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.КалендарьМаркетинга</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.МаркетинговоеМероприятие</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.МаркетинговаяАктивность</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.НапоминанияМаркетинга</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ВидыМероприятий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ВидыАктивностей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ОжидаемыеРезультаты</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Клиенты</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.КонтактныеЛица</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.Взаимодействие</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Report.ВзаимодействияПоКлиентам</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ИсточникиПоявления</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЗаполнениеТестовыхДанных</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

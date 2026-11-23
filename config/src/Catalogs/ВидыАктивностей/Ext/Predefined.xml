@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<Item id="2193d358-6358-5b4d-9e1f-c296698cd2d4">
+		<Name>EmailРассылка</Name>
+		<Code>000000001</Code>
+		<Description>Email-рассылка</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="ed32dbfe-d93c-51de-87a6-dfa7dec56dcb">
+		<Name>КонтекстнаяРеклама</Name>
+		<Code>000000002</Code>
+		<Description>Контекстная реклама</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="01d170fc-5070-5759-92eb-76b301f809af">
+		<Name>ПродвижениеВСоцсетях</Name>
+		<Code>000000003</Code>
+		<Description>Продвижение в социальных сетях (SMM)</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="cc6c1642-bca6-52bc-b126-406b6a3c87d3">
+		<Name>ПроведениеВебинара</Name>
+		<Code>000000004</Code>
+		<Description>Проведение онлайн-вебинара</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="6a237ffe-2346-5290-b700-64c8cbaf77a1">
+		<Name>ПубликацияСтатьиНаСайте</Name>
+		<Code>000000005</Code>
+		<Description>Публикация статьи на сайте</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="70e1d877-fd9c-5cc2-86c8-bdd47b487183">
+		<Name>РаздачаЛистовок</Name>
+		<Code>000000006</Code>
+		<Description>Раздача рекламных листовок</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="b7f60080-2f8e-5505-a41a-d56dea7acaa1">
+		<Name>НаружнаяРеклама</Name>
+		<Code>000000007</Code>
+		<Description>Размещение наружной рекламы (баннер)</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="9f947d1e-d82b-56f4-92bc-17559cbe3acf">
+		<Name>УчастиеВВыставкеСтенд</Name>
+		<Code>000000008</Code>
+		<Description>Работа на выставочном стенде</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="4ed1c4e2-eab3-5053-9e7d-5555aa52aa15">
+		<Name>ЛичнаяПрезентацияВОфисе</Name>
+		<Code>000000009</Code>
+		<Description>Личная презентация в офисе клиента</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="370cf87e-2fb9-5638-b6e2-01128a5f54de">
+		<Name>ХолодныйОбзвонПоБазе</Name>
+		<Code>000000010</Code>
+		<Description>Телефонный обзвон и анкетирование в ТЦ</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

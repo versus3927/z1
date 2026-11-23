@@ -1,18 +1,41 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 		<ChildItems>
 			<Button name="Заполнить" id="1">
-				<Type>UsualButton</Type>
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
 				<CommandName>Form.Command.Заполнить</CommandName>
 				<ExtendedTooltip name="ЗаполнитьПодсказка" id="101"/>
 			</Button>
 		</ChildItems>
 	</AutoCommandBar>
+	<ChildItems>
+		<LabelDecoration name="ОписаниеЗаполнения" id="3">
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Нажмите кнопку для заполнения или обновления тестовых данных по Заданиям 1, 2 и 3 (клиенты, контакты, взаимодействия, 4 сделки, документы продаж, 2 маркетинговых мероприятия, 4 маркетинговые активности и напоминания).</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="ОписаниеЗаполненияРасширеннаяПодсказка" id="103"/>
+		</LabelDecoration>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="50">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ЗаполнениеТестовыхДанных</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+	</Attributes>
 	<Commands>
 		<Command name="Заполнить" id="2">
 			<Title>
-				<v8:item><v8:lang>ru</v8:lang><v8:content>Создать 4 сделки и данные по ТЗ</v8:content></v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить тестовые данные (Z1 + Z2 + Z3)</v8:content>
+				</v8:item>
 			</Title>
 			<Action>Заполнить</Action>
 		</Command>

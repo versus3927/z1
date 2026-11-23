@@ -7,6 +7,9 @@
 		<field xsi:type="DataSetFieldField"><dataPath>ПредметИнтереса</dataPath><field>ПредметИнтереса</field><title xsi:type="v8:LocalStringType"><v8:item><v8:lang>ru</v8:lang><v8:content>Предмет интереса</v8:content></v8:item></title></field>
 		<field xsi:type="DataSetFieldField"><dataPath>Статус</dataPath><field>Статус</field><title xsi:type="v8:LocalStringType"><v8:item><v8:lang>ru</v8:lang><v8:content>Общий статус</v8:content></v8:item></title></field>
 		<field xsi:type="DataSetFieldField"><dataPath>Сумма</dataPath><field>Сумма</field><title xsi:type="v8:LocalStringType"><v8:item><v8:lang>ru</v8:lang><v8:content>Ожидаемая сумма</v8:content></v8:item></title></field>
+		<field xsi:type="DataSetFieldField"><dataPath>Количество</dataPath><field>Количество</field><title xsi:type="v8:LocalStringType"><v8:item><v8:lang>ru</v8:lang><v8:content>Количество сделок</v8:content></v8:item></title></field>
+		<resource xsi:type="DataSetFieldSum"><dataPath>Сумма</dataPath></resource>
+		<resource xsi:type="DataSetFieldCount"><dataPath>Количество</dataPath></resource>
 		<dataSource>ИсточникДанных1</dataSource>
 		<query>ВЫБРАТЬ
 	Сделки.ТекущийЭтап КАК Этап,
@@ -17,7 +20,11 @@
 ИЗ
 	Справочник.Сделки КАК Сделки
 ГДЕ
-	НЕ Сделки.ПометкаУдаления</query>
+	НЕ Сделки.ПометкаУдаления
+
+УПОРЯДОЧИТЬ ПО
+	Сделки.ТекущийЭтап.Порядок,
+	Сделки.Наименование</query>
 	</dataSet>
 	<settingsVariant>
 		<dcsset:name>Основной</dcsset:name>
@@ -36,10 +43,19 @@
 			<dcsset:item xsi:type="dcsset:StructureItemGroup">
 				<dcsset:groupItems><dcsset:item xsi:type="dcsset:GroupItemField"><dcsset:field>Этап</dcsset:field><dcsset:groupType>Items</dcsset:groupType><dcsset:periodAdditionType>None</dcsset:periodAdditionType><dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin><dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd></dcsset:item></dcsset:groupItems>
 				<dcsset:order><dcsset:item xsi:type="dcsset:OrderItemAuto"/></dcsset:order>
-				<dcsset:selection><dcsset:item xsi:type="dcsset:SelectedItemAuto"/></dcsset:selection>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemField"><dcsset:field>Этап</dcsset:field></dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField"><dcsset:field>Сумма</dcsset:field></dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField"><dcsset:field>Количество</dcsset:field></dcsset:item>
+				</dcsset:selection>
 				<dcsset:item xsi:type="dcsset:StructureItemGroup">
 					<dcsset:order><dcsset:item xsi:type="dcsset:OrderItemAuto"/></dcsset:order>
-					<dcsset:selection><dcsset:item xsi:type="dcsset:SelectedItemAuto"/></dcsset:selection>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemField"><dcsset:field>Сделка</dcsset:field></dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField"><dcsset:field>ПредметИнтереса</dcsset:field></dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField"><dcsset:field>Статус</dcsset:field></dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField"><dcsset:field>Сумма</dcsset:field></dcsset:item>
+					</dcsset:selection>
 				</dcsset:item>
 			</dcsset:item>
 		</dcsset:settings>

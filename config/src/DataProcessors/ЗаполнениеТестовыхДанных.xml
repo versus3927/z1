@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
-	<DataProcessor uuid="22AB37DE-4F3A-45ED-9BB8-DFB936E9BC51">
+	<DataProcessor uuid="22ab37de-4f3a-45ed-9bb8-dfb936e9bc51">
 		<InternalInfo>			<xr:GeneratedType name="DataProcessorObject.ЗаполнениеТестовыхДанных" category="Object">
-				<xr:TypeId>1B031F07-4673-46F9-842B-E0ECFDC7661D</xr:TypeId><xr:ValueId>2248981C-436F-49FC-A06F-E8B5B6BE553E</xr:ValueId>
+				<xr:TypeId>1b031f07-4673-46f9-842b-e0ecfdc7661d</xr:TypeId><xr:ValueId>2248981c-436f-49fc-a06f-e8b5b6be553e</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="DataProcessorManager.ЗаполнениеТестовыхДанных" category="Manager">
-				<xr:TypeId>A5752194-C2F9-4C91-B191-4B257C8675EB</xr:TypeId><xr:ValueId>B186A8EF-6EA7-4BB0-A1D4-E87BE0075127</xr:ValueId>
+				<xr:TypeId>a5752194-c2f9-4c91-b191-4b257c8675eb</xr:TypeId><xr:ValueId>b186a8ef-6ea7-4bb0-a1d4-e87be0075127</xr:ValueId>
 			</xr:GeneratedType>
 </InternalInfo>
 		<Properties><Name>ЗаполнениеТестовыхДанных</Name>			<Synonym><v8:item><v8:lang>ru</v8:lang><v8:content>Заполнение тестовых данных</v8:content></v8:item></Synonym>

@@ -28,6 +28,10 @@
 			</ChoiceParameterLinks>
 			<ExtendedTooltip name="КонтактноеЛицоРасширеннаяПодсказка" id="105"/>
 		</InputField>
+		<InputField name="Сделка" id="90">
+			<DataPath>Объект.Сделка</DataPath>
+			<ExtendedTooltip name="СделкаРасширеннаяПодсказка" id="190"/>
+		</InputField>
 		<InputField name="ВидВзаимодействия" id="7">
 			<DataPath>Объект.ВидВзаимодействия</DataPath>
 			<ExtendedTooltip name="ВидВзаимодействияРасширеннаяПодсказка" id="107"/>
@@ -84,6 +88,17 @@
 				<CommandName>Form.Command.ЗапланироватьВзаимодействие</CommandName>
 				<ExtendedTooltip name="ЗапланироватьВзаимодействиеРасширеннаяПодсказка" id="122"/>
 			</Button>
+			<Button name="ОтложитьНапоминание" id="82">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ОтложитьНапоминание</CommandName>
+				<ExtendedTooltip name="ОтложитьНапоминаниеРасширеннаяПодсказка" id="182"/>
+			</Button>
+			<Button name="ПрекратитьНапоминание" id="83">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ПрекратитьНапоминание</CommandName>
+				<ExtendedTooltip name="ПрекратитьНапоминаниеРасширеннаяПодсказка" id="183"/>
+			</Button>
+
 			</ChildItems>
 			<ExtendedTooltip name="ГруппаСледующийШагРасширеннаяПодсказка" id="117"/>
 		</UsualGroup>
@@ -134,6 +149,24 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ЗапланироватьВзаимодействие</Action>
+		</Command>
+		<Command name="ОтложитьНапоминание" id="80">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отложить на 15 минут</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ОтложитьНапоминание</Action>
+		</Command>
+		<Command name="ПрекратитьНапоминание" id="81">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прекратить напоминание</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ПрекратитьНапоминание</Action>
 		</Command>
 	</Commands>
 	<Parameters>

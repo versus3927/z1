@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<Item id="581848a6-8b2c-5826-8f20-00bae39d25dc">
+		<Name>Выставка</Name>
+		<Code>000000001</Code>
+		<Description>Выставка</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="87589d88-509e-55c4-b796-eb7ae6a8c1bb">
+		<Name>Конференция</Name>
+		<Code>000000002</Code>
+		<Description>Конференция</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="9d47041a-5191-5d61-9d9b-ab73c70f08de">
+		<Name>Семинар</Name>
+		<Code>000000003</Code>
+		<Description>Семинар</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="b32c2c28-773e-53ab-bb00-10bfc58209e8">
+		<Name>Вебинар</Name>
+		<Code>000000004</Code>
+		<Description>Вебинар</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="d186be11-cecf-5535-8a55-dfd5234510ec">
+		<Name>Презентация</Name>
+		<Code>000000005</Code>
+		<Description>Презентация</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="183b1927-9d25-5d57-848e-460685136b9b">
+		<Name>ДеловаяВстреча</Name>
+		<Code>000000006</Code>
+		<Description>Деловая встреча</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="9a7f269c-f961-573b-ab45-24b9aa789b5a">
+		<Name>РекламнаяАкция</Name>
+		<Code>000000007</Code>
+		<Description>Рекламная акция</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="ee0cad4f-6e33-5eea-b674-a4cfc86d0aa5">
+		<Name>МассоваяРассылка</Name>
+		<Code>000000008</Code>
+		<Description>Массовая рассылка</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Напоминания о мероприятиях и активностях</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ОткрытьКарточку" id="1">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.ОткрытьКарточку</CommandName>
+				<ExtendedTooltip name="ОткрытьКарточкуРасширеннаяПодсказка" id="101"/>
+			</Button>
+			<Button name="ПрекратитьНапоминание" id="2">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ПрекратитьНапоминание</CommandName>
+				<ExtendedTooltip name="ПрекратитьНапоминаниеРасширеннаяПодсказка" id="102"/>
+			</Button>
+			<Button name="ОтложитьНа15Минут" id="3">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ОтложитьНа15Минут</CommandName>
+				<ExtendedTooltip name="ОтложитьНа15МинутРасширеннаяПодсказка" id="103"/>
+			</Button>
+			<Button name="ОбновитьСписок" id="4">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ОбновитьСписок</CommandName>
+				<ExtendedTooltip name="ОбновитьСписокРасширеннаяПодсказка" id="104"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<CheckBoxField name="ПоказыватьВсеЗапланированные" id="5">
+			<DataPath>ПоказыватьВсеЗапланированные</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<Events>
+				<Event name="OnChange">ПоказыватьВсеЗапланированныеПриИзменении</Event>
+			</Events>
+			<ExtendedTooltip name="ПоказыватьВсеЗапланированныеРасширеннаяПодсказка" id="105"/>
+		</CheckBoxField>
+		<Table name="СписокНапоминаний" id="10">
+			<Representation>List</Representation>
+			<ReadOnly>true</ReadOnly>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>СписокНапоминаний</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="СписокНапоминанийКонтекстноеМеню" id="11"/>
+			<AutoCommandBar name="СписокНапоминанийКоманднаяПанель" id="12">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="СписокНапоминанийРасширеннаяПодсказка" id="110"/>
+			<SearchStringAddition name="СписокНапоминанийСтрокаПоиска" id="13">
+				<AdditionSource>
+					<Item>СписокНапоминаний</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокНапоминанийСтрокаПоискаКонтекстноеМеню" id="14"/>
+				<ExtendedTooltip name="СписокНапоминанийСтрокаПоискаРасширеннаяПодсказка" id="114"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокНапоминанийСостояниеПросмотра" id="15">
+				<AdditionSource>
+					<Item>СписокНапоминаний</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокНапоминанийСостояниеПросмотраКонтекстноеМеню" id="16"/>
+				<ExtendedTooltip name="СписокНапоминанийСостояниеПросмотраРасширеннаяПодсказка" id="116"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокНапоминанийУправлениеПоиском" id="17">
+				<AdditionSource>
+					<Item>СписокНапоминаний</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокНапоминанийУправлениеПоискомКонтекстноеМеню" id="18"/>
+				<ExtendedTooltip name="СписокНапоминанийУправлениеПоискомРасширеннаяПодсказка" id="118"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="Selection">СписокНапоминанийВыбор</Event>
+			</Events>
+			<ChildItems>
+				<InputField name="СписокНапоминанийДатаВремяНапоминания" id="21">
+					<DataPath>СписокНапоминаний.ДатаВремяНапоминания</DataPath>
+					<ContextMenu name="СписокНапоминанийДатаВремяНапоминанияКонтекстноеМеню" id="22"/>
+					<ExtendedTooltip name="СписокНапоминанийДатаВремяНапоминанияРасширеннаяПодсказка" id="121"/>
+				</InputField>
+				<InputField name="СписокНапоминанийВидОбъекта" id="23">
+					<DataPath>СписокНапоминаний.ВидОбъекта</DataPath>
+					<ContextMenu name="СписокНапоминанийВидОбъектаКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="СписокНапоминанийВидОбъектаРасширеннаяПодсказка" id="123"/>
+				</InputField>
+				<InputField name="СписокНапоминанийНазвание" id="25">
+					<DataPath>СписокНапоминаний.Название</DataPath>
+					<ContextMenu name="СписокНапоминанийНазваниеКонтекстноеМеню" id="26"/>
+					<ExtendedTooltip name="СписокНапоминанийНазваниеРасширеннаяПодсказка" id="125"/>
+				</InputField>
+				<InputField name="СписокНапоминанийДатаНачала" id="27">
+					<DataPath>СписокНапоминаний.ДатаНачала</DataPath>
+					<ContextMenu name="СписокНапоминанийДатаНачалаКонтекстноеМеню" id="28"/>
+					<ExtendedTooltip name="СписокНапоминанийДатаНачалаРасширеннаяПодсказка" id="127"/>
+				</InputField>
+				<InputField name="СписокНапоминанийОбъектНапоминания" id="29">
+					<DataPath>СписокНапоминаний.ОбъектНапоминания</DataPath>
+					<ContextMenu name="СписокНапоминанийОбъектНапоминанияКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="СписокНапоминанийОбъектНапоминанияРасширеннаяПодсказка" id="129"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="50">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.НапоминанияМаркетинга</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ПоказыватьВсеЗапланированные" id="51">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показывать все запланированные напоминания (включая будущие)</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СписокНапоминаний" id="52">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список напоминаний</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ДатаВремяНапоминания" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Время напоминания</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ВидОбъекта" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тип события</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>60</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Название" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Название</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>200</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаНачала" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата и время начала</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ОбъектНапоминания" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Документ</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:DocumentRef.МаркетинговоеМероприятие</v8:Type>
+						<v8:Type>cfg:DocumentRef.МаркетинговаяАктивность</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ОткрытьКарточку" id="60">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть карточку</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ОткрытьКарточку</Action>
+		</Command>
+		<Command name="ПрекратитьНапоминание" id="61">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прекратить напоминание</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ПрекратитьНапоминание</Action>
+		</Command>
+		<Command name="ОтложитьНа15Минут" id="62">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отложить на 15 мин.</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ОтложитьНа15Минут</Action>
+		</Command>
+		<Command name="ОбновитьСписок" id="63">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ОбновитьСписок</Action>
+		</Command>
+	</Commands>
+	<Parameters>
+		<Parameter name="ТолькоНаступившие">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Parameter>
+	</Parameters>
+</Form>

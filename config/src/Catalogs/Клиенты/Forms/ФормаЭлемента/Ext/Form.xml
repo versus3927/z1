@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="СоздатьВзаимодействие" id="1">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.СоздатьВзаимодействие</CommandName>
+				<ExtendedTooltip name="СоздатьВзаимодействиеРасширеннаяПодсказка" id="101"/>
+			</Button>
+			<Button name="ОбновитьИсторию" id="2">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ОбновитьИсторию</CommandName>
+				<ExtendedTooltip name="ОбновитьИсториюРасширеннаяПодсказка" id="102"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Наименование" id="10">
+			<DataPath>Объект.Наименование</DataPath>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="110"/>
+		</InputField>
+		<InputField name="ИсточникПоявления" id="11">
+			<DataPath>Объект.ИсточникПоявления</DataPath>
+			<ExtendedTooltip name="ИсточникПоявленияРасширеннаяПодсказка" id="111"/>
+		</InputField>
+		<InputField name="Комментарий" id="12">
+			<DataPath>Объект.Комментарий</DataPath>
+			<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="112"/>
+		</InputField>
+		<Table name="Контакты" id="20">
+			<DataPath>Объект.Контакты</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Контактные данные (телефоны и e-mail)</v8:content>
+				</v8:item>
+			</Title>
+			<ChildItems>
+				<InputField name="КонтактыТип" id="21">
+					<DataPath>Объект.Контакты.Тип</DataPath>
+					<ExtendedTooltip name="КонтактыТипРасширеннаяПодсказка" id="121"/>
+				</InputField>
+				<InputField name="КонтактыЗначение" id="22">
+					<DataPath>Объект.Контакты.Значение</DataPath>
+					<ExtendedTooltip name="КонтактыЗначениеРасширеннаяПодсказка" id="122"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+		<Table name="ИсторияВзаимодействий" id="30">
+			<DataPath>ИсторияВзаимодействий</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>История взаимодействий с клиентом</v8:content>
+				</v8:item>
+			</Title>
+			<ChildItems>
+				<InputField name="ИсторияВзаимодействийДата" id="31">
+					<DataPath>ИсторияВзаимодействий.Дата</DataPath>
+					<ExtendedTooltip name="ИсторияВзаимодействийДатаРасширеннаяПодсказка" id="131"/>
+				</InputField>
+				<InputField name="ИсторияВзаимодействийВид" id="32">
+					<DataPath>ИсторияВзаимодействий.Вид</DataPath>
+					<ExtendedTooltip name="ИсторияВзаимодействийВидРасширеннаяПодсказка" id="132"/>
+				</InputField>
+				<InputField name="ИсторияВзаимодействийСодержание" id="33">
+					<DataPath>ИсторияВзаимодействий.Содержание</DataPath>
+					<ExtendedTooltip name="ИсторияВзаимодействийСодержаниеРасширеннаяПодсказка" id="133"/>
+				</InputField>
+				<InputField name="ИсторияВзаимодействийРезультат" id="34">
+					<DataPath>ИсторияВзаимодействий.Результат</DataPath>
+					<ExtendedTooltip name="ИсторияВзаимодействийРезультатРасширеннаяПодсказка" id="134"/>
+				</InputField>
+				<InputField name="ИсторияВзаимодействийКонтактноеЛицо" id="35">
+					<DataPath>ИсторияВзаимодействий.КонтактноеЛицо</DataPath>
+					<ExtendedTooltip name="ИсторияВзаимодействийКонтактноеЛицоРасширеннаяПодсказка" id="135"/>
+				</InputField>
+				<InputField name="ИсторияВзаимодействийСледующийШаг" id="36">
+					<DataPath>ИсторияВзаимодействий.СледующийШаг</DataPath>
+					<ExtendedTooltip name="ИсторияВзаимодействийСледующийШагРасширеннаяПодсказка" id="136"/>
+				</InputField>
+			</ChildItems>
+			<Events>
+				<Event name="OnActivateRow">ИсторияВыбор</Event>
+			</Events>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="50">
+			<Type>
+				<v8:Type>cfg:CatalogObject.Клиенты</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ИсторияВзаимодействий" id="51">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>История взаимодействий</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Ссылка" id="52">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>200</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Дата" id="53">
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="Вид" id="54">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>100</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Содержание" id="55">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>500</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Результат" id="56">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>150</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="КонтактноеЛицо" id="57">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>150</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="СледующийШаг" id="58">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>200</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="СоздатьВзаимодействие" id="60">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать взаимодействие</v8:content>
+				</v8:item>
+			</Title>
+			<Action>СоздатьВзаимодействие</Action>
+		</Command>
+		<Command name="ОбновитьИсторию" id="61">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить историю</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ОбновитьИсторию</Action>
+		</Command>
+	</Commands>
+</Form>

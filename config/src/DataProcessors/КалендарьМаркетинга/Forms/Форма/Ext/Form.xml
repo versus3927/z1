@@ -1,0 +1,265 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pl="http://v8.1c.ru/8.3/data/planner" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Календарь маркетинговых мероприятий и активностей</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ОбновитьКалендарь" id="1">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.ОбновитьКалендарь</CommandName>
+				<ExtendedTooltip name="ОбновитьКалендарьРасширеннаяПодсказка" id="101"/>
+			</Button>
+			<Button name="СоздатьМероприятие" id="2">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.СоздатьМероприятие</CommandName>
+				<ExtendedTooltip name="СоздатьМероприятиеРасширеннаяПодсказка" id="102"/>
+			</Button>
+			<Button name="СоздатьАктивность" id="3">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.СоздатьАктивность</CommandName>
+				<ExtendedTooltip name="СоздатьАктивностьРасширеннаяПодсказка" id="103"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаНастройкиПериода" id="4">
+			<Group>HorizontalIfPossible</Group>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаНастройкиПериодаРасширеннаяПодсказка" id="104"/>
+			<ChildItems>
+				<InputField name="НачалоПериода" id="5">
+					<DataPath>НачалоПериода</DataPath>
+					<Events>
+						<Event name="OnChange">ПериодПриИзменении</Event>
+					</Events>
+					<ExtendedTooltip name="НачалоПериодаРасширеннаяПодсказка" id="105"/>
+				</InputField>
+				<InputField name="ОкончаниеПериода" id="6">
+					<DataPath>ОкончаниеПериода</DataPath>
+					<Events>
+						<Event name="OnChange">ПериодПриИзменении</Event>
+					</Events>
+					<ExtendedTooltip name="ОкончаниеПериодаРасширеннаяПодсказка" id="106"/>
+				</InputField>
+				<CheckBoxField name="ПоказыватьМероприятия" id="7">
+					<DataPath>ПоказыватьМероприятия</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<Events>
+						<Event name="OnChange">ФильтрПриИзменении</Event>
+					</Events>
+					<ExtendedTooltip name="ПоказыватьМероприятияРасширеннаяПодсказка" id="107"/>
+				</CheckBoxField>
+				<CheckBoxField name="ПоказыватьАктивности" id="8">
+					<DataPath>ПоказыватьАктивности</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<Events>
+						<Event name="OnChange">ФильтрПриИзменении</Event>
+					</Events>
+					<ExtendedTooltip name="ПоказыватьАктивностиРасширеннаяПодсказка" id="108"/>
+				</CheckBoxField>
+			</ChildItems>
+		</UsualGroup>
+		<LabelDecoration name="ЛегендаКалендаря" id="9">
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Легенда: серо-голубой — мероприятия; светло-зеленый — выполненные активности; мягкий бежевый — запланированные активности; нежно-розовый — невыполненные просроченные активности. Двойной щелчок открывает карточку.</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="ЛегендаКалендаряРасширеннаяПодсказка" id="109"/>
+		</LabelDecoration>
+		<PlannerField name="Планировщик" id="10">
+			<DataPath>Планировщик</DataPath>
+			<TitleLocation>None</TitleLocation>
+			<Height>18</Height>
+			<ContextMenu name="ПланировщикКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="ПланировщикРасширеннаяПодсказка" id="110"/>
+			<Events>
+				<Event name="BeforeStartEdit">ПланировщикПередНачаломРедактирования</Event>
+				<Event name="BeforeStartQuickEdit">ПланировщикПередНачаломБыстрогоРедактирования</Event>
+				<Event name="Selection">ПланировщикВыбор</Event>
+			</Events>
+		</PlannerField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="50">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.КалендарьМаркетинга</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="Планировщик" id="51">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Планировщик</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>pl:Planner</v8:Type>
+			</Type>
+			<Settings xmlns:pl="http://v8.1c.ru/8.3/data/planner" xsi:type="pl:Planner">
+				<pl:borderColor>auto</pl:borderColor>
+				<pl:backColor>auto</pl:backColor>
+				<pl:textColor>auto</pl:textColor>
+				<pl:lineColor>auto</pl:lineColor>
+				<pl:font kind="AutoFont"/>
+				<pl:beginOfRepresentationPeriod>0001-01-01T00:00:00</pl:beginOfRepresentationPeriod>
+				<pl:endOfRepresentationPeriod>0001-01-01T00:00:00</pl:endOfRepresentationPeriod>
+				<pl:alignElementsOfTimeScale>true</pl:alignElementsOfTimeScale>
+				<pl:displayTimeScaleWrapHeaders>true</pl:displayTimeScaleWrapHeaders>
+				<pl:displayWrapHeaders>true</pl:displayWrapHeaders>
+				<pl:timeScaleWrapHeadersFormat>
+					<v8:item>
+						<v8:lang>#</v8:lang>
+						<v8:content>DLF="DD"</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>DLF="DD"</v8:content>
+					</v8:item>
+				</pl:timeScaleWrapHeadersFormat>
+				<pl:periodicVariantUnit>Day</pl:periodicVariantUnit>
+				<pl:periodicVariantRepetition>1</pl:periodicVariantRepetition>
+				<pl:timeScaleWrapBeginIndent>0</pl:timeScaleWrapBeginIndent>
+				<pl:timeScaleWrapEndIndent>0</pl:timeScaleWrapEndIndent>
+				<pl:timeScale>
+					<placement xmlns="http://v8.1c.ru/8.2/data/chart">Left</placement>
+					<level xmlns="http://v8.1c.ru/8.2/data/chart">
+						<measure>Hour</measure>
+						<interval>1</interval>
+						<show>true</show>
+						<line width="1" gap="false">
+							<v8ui:style xsi:type="v8ui:ChartLineType">Solid</v8ui:style>
+						</line>
+						<scaleColor>auto</scaleColor>
+						<dayFormatRule>MonthDayWeekDay</dayFormatRule>
+						<format>
+							<v8:item>
+								<v8:lang>#</v8:lang>
+								<v8:content>DF="HH:mm"</v8:content>
+							</v8:item>
+						</format>
+						<labels>
+							<ticks>0</ticks>
+						</labels>
+						<backColor>auto</backColor>
+						<textColor>auto</textColor>
+						<showPereodicalLabels>true</showPereodicalLabels>
+					</level>
+					<transparent xmlns="http://v8.1c.ru/8.2/data/chart">false</transparent>
+					<backColor xmlns="http://v8.1c.ru/8.2/data/chart">auto</backColor>
+					<textColor xmlns="http://v8.1c.ru/8.2/data/chart">auto</textColor>
+					<currentLevel xmlns="http://v8.1c.ru/8.2/data/chart">0</currentLevel>
+				</pl:timeScale>
+				<pl:period>
+					<pl:begin>2026-11-01T00:00:00</pl:begin>
+					<pl:end>2026-11-30T23:59:59</pl:end>
+				</pl:period>
+				<pl:displayCurrentDate>true</pl:displayCurrentDate>
+				<pl:itemsTimeRepresentation>BeginAndEndTime</pl:itemsTimeRepresentation>
+				<pl:itemsBehaviorWhenSpaceInsufficient>CollapseItems</pl:itemsBehaviorWhenSpaceInsufficient>
+				<pl:autoMinColumnWidth>true</pl:autoMinColumnWidth>
+				<pl:autoMinRowHeight>true</pl:autoMinRowHeight>
+				<pl:minColumnWidth>0</pl:minColumnWidth>
+				<pl:minRowHeight>0</pl:minRowHeight>
+				<pl:fixDimensionsHeader>auto</pl:fixDimensionsHeader>
+				<pl:fixTimeScaleHeader>auto</pl:fixTimeScaleHeader>
+				<pl:border width="1">
+					<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+				</pl:border>
+				<pl:newItemsTextType>String</pl:newItemsTextType>
+			</Settings>
+		</Attribute>
+		<Attribute name="НачалоПериода" id="52">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Период с</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ОкончаниеПериода" id="53">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>по</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПоказыватьМероприятия" id="54">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Мероприятия</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПоказыватьАктивности" id="55">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Активности</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ОбновитьКалендарь" id="60">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ОбновитьКалендарь</Action>
+		</Command>
+		<Command name="СоздатьМероприятие" id="61">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Новое мероприятие</v8:content>
+				</v8:item>
+			</Title>
+			<Action>СоздатьМероприятие</Action>
+		</Command>
+		<Command name="СоздатьАктивность" id="62">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Новая активность</v8:content>
+				</v8:item>
+			</Title>
+			<Action>СоздатьАктивность</Action>
+		</Command>
+	</Commands>
+</Form>

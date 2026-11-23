@@ -1,24 +1,24 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <PredefinedData xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
-	<Item>
+	<Item id="806673ba-7e4d-5631-9a09-a947e36e5d32">
 		<Name>Директор</Name>
 		<Description>Директор</Description>
 		<Code>000000001</Code>
 		<IsFolder>false</IsFolder>
 	</Item>
-	<Item>
+	<Item id="9a9a87ce-24c8-564a-9ee6-eb9dfca90515">
 		<Name>Менеджер</Name>
 		<Description>Менеджер</Description>
 		<Code>000000002</Code>
 		<IsFolder>false</IsFolder>
 	</Item>
-	<Item>
+	<Item id="989c0442-41cd-53d6-a351-d857d29acc33">
 		<Name>Бухгалтер</Name>
 		<Description>Бухгалтер</Description>
 		<Code>000000003</Code>
 		<IsFolder>false</IsFolder>
 	</Item>
-	<Item>
+	<Item id="7ffc0bdf-568a-5a29-85cf-57d63fc759bc">
 		<Name>ТехническийСпециалист</Name>
 		<Description>Технический специалист</Description>
 		<Code>000000004</Code>

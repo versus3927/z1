@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаШапка" id="1">
+			<Group>HorizontalIfPossible</Group>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаШапкаРасширеннаяПодсказка" id="101"/>
+			<ChildItems>
+				<InputField name="Номер" id="2">
+					<DataPath>Объект.Number</DataPath>
+					<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="102"/>
+				</InputField>
+				<InputField name="Дата" id="3">
+					<DataPath>Объект.Date</DataPath>
+					<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="103"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="Название" id="4">
+			<DataPath>Объект.Название</DataPath>
+			<ExtendedTooltip name="НазваниеРасширеннаяПодсказка" id="104"/>
+		</InputField>
+		<InputField name="ВидМероприятия" id="5">
+			<DataPath>Объект.ВидМероприятия</DataPath>
+			<ExtendedTooltip name="ВидМероприятияРасширеннаяПодсказка" id="105"/>
+		</InputField>
+		<UsualGroup name="ГруппаПериодПроведения" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Период проведения</v8:content>
+				</v8:item>
+			</Title>
+			<Group>HorizontalIfPossible</Group>
+			<ExtendedTooltip name="ГруппаПериодПроведенияРасширеннаяПодсказка" id="106"/>
+			<ChildItems>
+				<InputField name="ДатаНачала" id="7">
+					<DataPath>Объект.ДатаНачала</DataPath>
+					<Events>
+						<Event name="OnChange">ДатаНачалаПриИзменении</Event>
+					</Events>
+					<ExtendedTooltip name="ДатаНачалаРасширеннаяПодсказка" id="107"/>
+				</InputField>
+				<InputField name="ДатаОкончания" id="8">
+					<DataPath>Объект.ДатаОкончания</DataPath>
+					<ExtendedTooltip name="ДатаОкончанияРасширеннаяПодсказка" id="108"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаПоказатели" id="9">
+			<Group>HorizontalIfPossible</Group>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаПоказателиРасширеннаяПодсказка" id="109"/>
+			<ChildItems>
+				<InputField name="КоличествоУчастников" id="10">
+					<DataPath>Объект.КоличествоУчастников</DataPath>
+					<ExtendedTooltip name="КоличествоУчастниковРасширеннаяПодсказка" id="110"/>
+				</InputField>
+				<InputField name="ПланируемыйБюджет" id="11">
+					<DataPath>Объект.ПланируемыйБюджет</DataPath>
+					<ExtendedTooltip name="ПланируемыйБюджетРасширеннаяПодсказка" id="111"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="ОжидаемыйРезультат" id="12">
+			<DataPath>Объект.ОжидаемыйРезультат</DataPath>
+			<ExtendedTooltip name="ОжидаемыйРезультатРасширеннаяПодсказка" id="112"/>
+		</InputField>
+		<InputField name="РезультатПроведения" id="13">
+			<DataPath>Объект.РезультатПроведения</DataPath>
+			<MultiLine>true</MultiLine>
+			<Height>4</Height>
+			<ExtendedTooltip name="РезультатПроведенияРасширеннаяПодсказка" id="113"/>
+		</InputField>
+		<UsualGroup name="ГруппаНапоминание" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Напоминание</v8:content>
+				</v8:item>
+			</Title>
+			<Group>HorizontalIfPossible</Group>
+			<ExtendedTooltip name="ГруппаНапоминаниеРасширеннаяПодсказка" id="114"/>
+			<ChildItems>
+				<CheckBoxField name="Напомнить" id="15">
+					<DataPath>Объект.Напомнить</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<Events>
+						<Event name="OnChange">НапомнитьПриИзменении</Event>
+					</Events>
+					<ExtendedTooltip name="НапомнитьРасширеннаяПодсказка" id="115"/>
+				</CheckBoxField>
+				<InputField name="ДатаВремяНапоминания" id="16">
+					<DataPath>Объект.ДатаВремяНапоминания</DataPath>
+					<Events>
+						<Event name="OnChange">ДатаВремяНапоминанияПриИзменении</Event>
+					</Events>
+					<ExtendedTooltip name="ДатаВремяНапоминанияРасширеннаяПодсказка" id="116"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="50">
+			<Type>
+				<v8:Type>cfg:DocumentObject.МаркетинговоеМероприятие</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

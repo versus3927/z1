@@ -36,7 +36,7 @@
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>CRM — задача Z1</v8:content>
+					<v8:content>CRM — Управление продажами и маркетингом (Z1–Z3)</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
@@ -49,7 +49,7 @@
 			<ScriptVariant>Russian</ScriptVariant>
 			<DefaultRoles/>
 			<Vendor/>
-			<Version>1.0.0.1</Version>
+			<Version>1.0.0.3</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>false</UseManagedFormInOrdinaryApplication>
@@ -249,27 +249,36 @@
 			<Subsystem>Маркетинг</Subsystem>
 			<Subsystem>Продажи</Subsystem>
 			<Subsystem>Сервис</Subsystem>
+			<CommonModule>НапоминанияМаркетингаВызовСервера</CommonModule>
+			<Enum>СтатусыСделок</Enum>
+			<Enum>ТипыАктивности</Enum>
 			<Enum>ТипыКонтакта</Enum>
+			<Enum>ЭтапыСделки</Enum>
+			<Catalog>ВидыАктивностей</Catalog>
 			<Catalog>ВидыВзаимодействий</Catalog>
+			<Catalog>ВидыМероприятий</Catalog>
+			<Catalog>ИнтересКлиента</Catalog>
 			<Catalog>ИсточникиПоявления</Catalog>
 			<Catalog>Клиенты</Catalog>
 			<Catalog>КонтактныеЛица</Catalog>
+			<Catalog>ОжидаемыеРезультаты</Catalog>
+			<Catalog>ПричиныПроигрыша</Catalog>
 			<Catalog>РезультатыВзаимодействий</Catalog>
 			<Catalog>РолиКонтактныхЛиц</Catalog>
-						<Enum>СтатусыСделок</Enum>
-			<Enum>ЭтапыСделки</Enum>
-			<Catalog>ИнтересКлиента</Catalog>
-			<Catalog>ПричиныПроигрыша</Catalog>
 			<Catalog>Сделки</Catalog>
 			<Catalog>Товары</Catalog>
 			<Document>Взаимодействие</Document>
 			<Document>ЗаказКлиента</Document>
 			<Document>КоммерческоеПредложение</Document>
+			<Document>МаркетинговаяАктивность</Document>
+			<Document>МаркетинговоеМероприятие</Document>
 			<Document>ПоступлениеДС</Document>
 			<Document>Продажа</Document>
 			<Report>ВзаимодействияПоКлиентам</Report>
 			<Report>ВоронкаПродаж</Report>
-					<DataProcessor>ЗаполнениеТестовыхДанных</DataProcessor>
+			<DataProcessor>ЗаполнениеТестовыхДанных</DataProcessor>
+			<DataProcessor>КалендарьМаркетинга</DataProcessor>
+			<DataProcessor>НапоминанияМаркетинга</DataProcessor>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>

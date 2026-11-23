@@ -1,36 +1,36 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <PredefinedData xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
-	<Item>
+	<Item id="95d45a6d-6a55-5fa1-a537-5c38a9167a4d">
 		<Name>Реклама</Name>
 		<Description>Реклама</Description>
 		<Code>000000001</Code>
 		<IsFolder>false</IsFolder>
 	</Item>
-	<Item>
+	<Item id="1764dfa2-21f2-548a-ade4-5280562a1b93">
 		<Name>Рекомендация</Name>
 		<Description>Рекомендация</Description>
 		<Code>000000002</Code>
 		<IsFolder>false</IsFolder>
 	</Item>
-	<Item>
+	<Item id="740ebcc0-d677-561e-8075-5c007a7bceb1">
 		<Name>Сайт</Name>
 		<Description>Сайт компании</Description>
 		<Code>000000003</Code>
 		<IsFolder>false</IsFolder>
 	</Item>
-	<Item>
+	<Item id="b2fd1322-7f87-5159-bb54-f9acc99477f0">
 		<Name>ХолодныйЗвонок</Name>
 		<Description>Холодный звонок</Description>
 		<Code>000000004</Code>
 		<IsFolder>false</IsFolder>
 	</Item>
-	<Item>
+	<Item id="fac5a946-94c3-5c59-8a88-ca4bee6624ef">
 		<Name>СоциальныеСети</Name>
 		<Description>Социальные сети</Description>
 		<Code>000000005</Code>
 		<IsFolder>false</IsFolder>
 	</Item>
-	<Item>
+	<Item id="692e64bc-ca17-5abe-9572-dd6b343aadc6">
 		<Name>Выставка</Name>
 		<Description>Выставка / мероприятие</Description>
 		<Code>000000006</Code>
