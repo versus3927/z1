@@ -318,8 +318,6 @@
 					</Attribute>
 		</ChildObjects>
 			</TabularSection>
-		
-			<Form>ФормаДокумента</Form>
 			<Form>ФормаДокумента</Form>
 		</ChildObjects>
 	</Document>
