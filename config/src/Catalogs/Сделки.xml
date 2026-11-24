@@ -459,9 +459,10 @@
 							<DataHistory>Use</DataHistory>
 						</Properties>
 					</Attribute>
-					<Form>ФормаЭлемента</Form>
 		</ChildObjects>
 			</TabularSection>
+		
+			<Form>ФормаЭлемента</Form>
 			<Form>ФормаЭлемента</Form>
 		</ChildObjects>
 	</Catalog>
